@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		AC4DADAC235BEF830057ED48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4DADAB235BEF830057ED48 /* AppDelegate.swift */; };
 		AC4DADAE235BEF830057ED48 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4DADAD235BEF830057ED48 /* SceneDelegate.swift */; };
-		AC4DADB0235BEF830057ED48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4DADAF235BEF830057ED48 /* ViewController.swift */; };
 		AC4DADB3235BEF830057ED48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC4DADB1235BEF830057ED48 /* Main.storyboard */; };
 		AC4DADB5235BEF850057ED48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC4DADB4235BEF850057ED48 /* Assets.xcassets */; };
 		AC4DADB8235BEF850057ED48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC4DADB6235BEF850057ED48 /* LaunchScreen.storyboard */; };
 		AC4DADC0235BF0590057ED48 /* Rarest Gemstones Info.rtfd in Resources */ = {isa = PBXBuildFile; fileRef = AC4DADBF235BF0590057ED48 /* Rarest Gemstones Info.rtfd */; };
+		AC7B8290235CD9F800A40D81 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7B828F235CD9F800A40D81 /* CollectionViewController.swift */; };
+		AC7B8292235CDA0A00A40D81 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7B8291235CDA0A00A40D81 /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC4DADA8235BEF830057ED48 /* Rarest Gemstones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rarest Gemstones.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC4DADAB235BEF830057ED48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC4DADAD235BEF830057ED48 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AC4DADAF235BEF830057ED48 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AC4DADB2235BEF830057ED48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC4DADB4235BEF850057ED48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC4DADB7235BEF850057ED48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC4DADB9235BEF850057ED48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC4DADBF235BF0590057ED48 /* Rarest Gemstones Info.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; path = "Rarest Gemstones Info.rtfd"; sourceTree = "<group>"; };
+		AC7B828F235CD9F800A40D81 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		AC7B8291235CDA0A00A40D81 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +62,8 @@
 			children = (
 				AC4DADAB235BEF830057ED48 /* AppDelegate.swift */,
 				AC4DADAD235BEF830057ED48 /* SceneDelegate.swift */,
-				AC4DADAF235BEF830057ED48 /* ViewController.swift */,
+				AC7B828F235CD9F800A40D81 /* CollectionViewController.swift */,
+				AC7B8291235CDA0A00A40D81 /* CollectionViewCell.swift */,
 				AC4DADB1235BEF830057ED48 /* Main.storyboard */,
 				AC4DADB4235BEF850057ED48 /* Assets.xcassets */,
 				AC4DADB6235BEF850057ED48 /* LaunchScreen.storyboard */,
@@ -142,8 +145,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC4DADB0235BEF830057ED48 /* ViewController.swift in Sources */,
+				AC7B8290235CD9F800A40D81 /* CollectionViewController.swift in Sources */,
 				AC4DADAC235BEF830057ED48 /* AppDelegate.swift in Sources */,
+				AC7B8292235CDA0A00A40D81 /* CollectionViewCell.swift in Sources */,
 				AC4DADAE235BEF830057ED48 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
