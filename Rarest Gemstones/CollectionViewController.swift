@@ -12,17 +12,23 @@ import UIKit
 private let reuseIdentifier = "Cell"
 
 class CollectionViewController: UICollectionViewController {
+    
+    var items = [[String:String]]()
+    
+    
+    func loadRareGemPlist() -> [[String:String]] {
+        
+        let path = Bundle.main.path(forResource: "RareGems", ofType: "plist")
+        return NSArray.init(contentsOf: URL.init(fileURLWithPath: path!)) as! [[String:String]]
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        // Do any additional setup after loading the view.
+        self.items = loadRareGemPlist()
+        
+        self.navigationItem.title = "Rarest Gemstones"
     }
 
     /*
@@ -39,19 +45,24 @@ class CollectionViewController: UICollectionViewController {
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return self.items.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CollectionViewCell
     
         // Configure the cell
+        
+        let item = self.items[indexPath.row]
+        
+        cell.cellImageView.image = UIImage(named: item["Image"]!)
     
         return cell
     }
