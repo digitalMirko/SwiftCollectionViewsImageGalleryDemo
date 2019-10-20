@@ -13,6 +13,7 @@
 		AC4DADB3235BEF830057ED48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC4DADB1235BEF830057ED48 /* Main.storyboard */; };
 		AC4DADB5235BEF850057ED48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC4DADB4235BEF850057ED48 /* Assets.xcassets */; };
 		AC4DADB8235BEF850057ED48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC4DADB6235BEF850057ED48 /* LaunchScreen.storyboard */; };
+		AC4DADC0235BF0590057ED48 /* Rarest Gemstones Info.rtfd in Resources */ = {isa = PBXBuildFile; fileRef = AC4DADBF235BF0590057ED48 /* Rarest Gemstones Info.rtfd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		AC4DADB4235BEF850057ED48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC4DADB7235BEF850057ED48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC4DADB9235BEF850057ED48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC4DADBF235BF0590057ED48 /* Rarest Gemstones Info.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; path = "Rarest Gemstones Info.rtfd"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				AC4DADB4235BEF850057ED48 /* Assets.xcassets */,
 				AC4DADB6235BEF850057ED48 /* LaunchScreen.storyboard */,
 				AC4DADB9235BEF850057ED48 /* Info.plist */,
+				AC4DADBF235BF0590057ED48 /* Rarest Gemstones Info.rtfd */,
 			);
 			path = "Rarest Gemstones";
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC4DADB8235BEF850057ED48 /* LaunchScreen.storyboard in Resources */,
+				AC4DADC0235BF0590057ED48 /* Rarest Gemstones Info.rtfd in Resources */,
 				AC4DADB5235BEF850057ED48 /* Assets.xcassets in Resources */,
 				AC4DADB3235BEF830057ED48 /* Main.storyboard in Resources */,
 			);
