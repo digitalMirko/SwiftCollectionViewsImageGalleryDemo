@@ -11,7 +11,7 @@ import UIKit
 
 private let reuseIdentifier = "Cell"
 
-class CollectionViewController: UICollectionViewController {
+class CollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     var items = [[String:String]]()
     
@@ -67,35 +67,35 @@ class CollectionViewController: UICollectionViewController {
         return cell
     }
 
-    // MARK: UICollectionViewDelegate
-
-    /*
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
-    override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
-        return true
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let screenSize : CGRect = UIScreen.main.bounds
+        var widthCell = 0
+        var heightCell = 0
+        // iPhone width info ref.: https://www.paintcodeapp.com/news/ultimate-guide-to-iphone-resolutions
+        // Demo setup for iPhones not iPads
+        // iPhone 11 Pro Max, Xs Max, 11,Xr, 6+,6s+,7+,8+ screen widths
+        if screenSize.width == 414 {
+            
+            widthCell = 190
+            heightCell = 125
+        }
+       
+        // iPhone 11 Pro, X, Xs, 6, 6s, 7,8 screen widths
+        if screenSize.width == 375 {
+                   
+                   widthCell = 172
+                   heightCell = 125
+               }
+        
+        // iPhone 5, 5s, 5c, SE, 4, 4s, 2G, 3G, 3GS screen widths
+        if screenSize.width == 320 {
+                   
+                   widthCell = 145
+                   heightCell = 125
+               }
+        
+        return CGSize(width: widthCell, height: heightCell)
     }
-    */
-
-    /*
-    // Uncomment this method to specify if the specified item should be selected
-    override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-    override func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
-    
-    }
-    */
 
 }

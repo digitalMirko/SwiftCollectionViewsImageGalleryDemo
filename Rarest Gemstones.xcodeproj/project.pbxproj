@@ -16,6 +16,7 @@
 		AC74B347235CDEE30037CDD5 /* RareGems.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC74B346235CDEE30037CDD5 /* RareGems.plist */; };
 		AC7B8290235CD9F800A40D81 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7B828F235CD9F800A40D81 /* CollectionViewController.swift */; };
 		AC7B8292235CDA0A00A40D81 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7B8291235CDA0A00A40D81 /* CollectionViewCell.swift */; };
+		ACD73718235D511E003F17F4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD73717235D511E003F17F4 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		AC74B346235CDEE30037CDD5 /* RareGems.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = RareGems.plist; sourceTree = "<group>"; };
 		AC7B828F235CD9F800A40D81 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		AC7B8291235CDA0A00A40D81 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		ACD73717235D511E003F17F4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				AC4DADAD235BEF830057ED48 /* SceneDelegate.swift */,
 				AC7B828F235CD9F800A40D81 /* CollectionViewController.swift */,
 				AC7B8291235CDA0A00A40D81 /* CollectionViewCell.swift */,
+				ACD73717235D511E003F17F4 /* DetailViewController.swift */,
 				AC4DADB1235BEF830057ED48 /* Main.storyboard */,
 				AC4DADB4235BEF850057ED48 /* Assets.xcassets */,
 				AC4DADB6235BEF850057ED48 /* LaunchScreen.storyboard */,
@@ -151,6 +154,7 @@
 			files = (
 				AC7B8290235CD9F800A40D81 /* CollectionViewController.swift in Sources */,
 				AC4DADAC235BEF830057ED48 /* AppDelegate.swift in Sources */,
+				ACD73718235D511E003F17F4 /* DetailViewController.swift in Sources */,
 				AC7B8292235CDA0A00A40D81 /* CollectionViewCell.swift in Sources */,
 				AC4DADAE235BEF830057ED48 /* SceneDelegate.swift in Sources */,
 			);

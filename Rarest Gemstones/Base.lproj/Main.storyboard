@@ -3,6 +3,7 @@
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -43,6 +44,7 @@
                                 <size key="customSize" width="170" height="125"/>
                                 <connections>
                                     <outlet property="cellImageView" destination="2BC-lC-svR" id="k1e-g6-o25"/>
+                                    <segue destination="nVd-cF-z1U" kind="show" identifier="showDetail" id="ZoG-ZQ-QuD"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -57,6 +59,75 @@
             </objects>
             <point key="canvasLocation" x="669.60000000000002" y="94.902548725637189"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="xAo-k4-MzI">
+            <objects>
+                <viewController id="nVd-cF-z1U" customClass="DetailViewController" customModule="Rarest_Gemstones" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DHD-vD-etf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="01Tanzanite" translatesAutoresizingMaskIntoConstraints="NO" id="vJl-D3-GmZ">
+                                <rect key="frame" x="16" y="20" width="343" height="230"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baK-gl-nOd">
+                                <rect key="frame" x="16" y="262" width="343" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="c5B-w1-5tL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ob7-jb-3Bq">
+                                <rect key="frame" x="16" y="317" width="343" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="0FK-KG-VUG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="22"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uH3-ul-Wff">
+                                <rect key="frame" x="16" y="373" width="343" height="230"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ken-MN-DRM" firstAttribute="trailing" secondItem="vJl-D3-GmZ" secondAttribute="trailing" constant="16" id="6DL-ea-qu2"/>
+                            <constraint firstItem="uH3-ul-Wff" firstAttribute="leading" secondItem="ken-MN-DRM" secondAttribute="leading" constant="16" id="AFb-gV-WxF"/>
+                            <constraint firstItem="ob7-jb-3Bq" firstAttribute="leading" secondItem="ken-MN-DRM" secondAttribute="leading" constant="16" id="Ah0-67-4Lw"/>
+                            <constraint firstItem="ken-MN-DRM" firstAttribute="bottom" secondItem="uH3-ul-Wff" secondAttribute="bottom" constant="20" id="Nhg-J2-rT6"/>
+                            <constraint firstItem="uH3-ul-Wff" firstAttribute="top" secondItem="ob7-jb-3Bq" secondAttribute="bottom" constant="14" id="VSX-bC-Vqs"/>
+                            <constraint firstItem="vJl-D3-GmZ" firstAttribute="leading" secondItem="ken-MN-DRM" secondAttribute="leading" constant="16" id="Vex-py-uDD"/>
+                            <constraint firstItem="baK-gl-nOd" firstAttribute="top" secondItem="vJl-D3-GmZ" secondAttribute="bottom" constant="12" id="fXF-D2-CNM"/>
+                            <constraint firstItem="ken-MN-DRM" firstAttribute="trailing" secondItem="uH3-ul-Wff" secondAttribute="trailing" constant="16" id="iXD-Qj-v50"/>
+                            <constraint firstItem="ken-MN-DRM" firstAttribute="trailing" secondItem="baK-gl-nOd" secondAttribute="trailing" constant="16" id="leM-d9-hx9"/>
+                            <constraint firstItem="ken-MN-DRM" firstAttribute="trailing" secondItem="ob7-jb-3Bq" secondAttribute="trailing" constant="16" id="mv7-Sc-GvH"/>
+                            <constraint firstItem="uH3-ul-Wff" firstAttribute="height" secondItem="vJl-D3-GmZ" secondAttribute="height" id="tJ5-JQ-EYt"/>
+                            <constraint firstItem="ob7-jb-3Bq" firstAttribute="top" secondItem="baK-gl-nOd" secondAttribute="bottom" constant="13" id="taY-0l-0EB"/>
+                            <constraint firstItem="vJl-D3-GmZ" firstAttribute="top" secondItem="ken-MN-DRM" secondAttribute="top" constant="20" id="uXX-mw-yg5"/>
+                            <constraint firstItem="baK-gl-nOd" firstAttribute="leading" secondItem="ken-MN-DRM" secondAttribute="leading" constant="16" id="xvg-nH-GUN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ken-MN-DRM"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="FZy-qL-Ouf"/>
+                    <connections>
+                        <outlet property="detailDescription" destination="uH3-ul-Wff" id="WgS-Il-8aF"/>
+                        <outlet property="detailImageView" destination="vJl-D3-GmZ" id="abW-SZ-lZY"/>
+                        <outlet property="infoLabel" destination="ob7-jb-3Bq" id="auz-s0-QlF"/>
+                        <outlet property="nameLabel" destination="baK-gl-nOd" id="Zhl-HM-vzJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JAz-3p-Q2M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1392.8" y="94.902548725637189"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="avJ-BP-dkY">
             <objects>
@@ -65,12 +136,14 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="don-T4-frb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.31479272024777172" green="0.36723929046732962" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="24"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                     </navigationBar>
