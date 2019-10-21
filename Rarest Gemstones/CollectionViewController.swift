@@ -31,15 +31,28 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         self.navigationItem.title = "Rarest Gemstones"
     }
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "showDetail" {
+            
+            let detail = segue.destination as! DetailViewController
+            
+            if let indexPath = self.collectionView?.indexPath(for: sender as! UICollectionViewCell) {
+                
+                let item = self.items[indexPath.row]
+                
+                detail.sentData1 = item["Name"]
+                detail.sentData2 = item["Image"]
+                detail.sentData3 = item["Info"]
+                detail.sentData4 = item["Description"]
+            }
+        }
     }
-    */
+    
 
     // MARK: UICollectionViewDataSource
 

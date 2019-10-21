@@ -17,10 +17,21 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var infoLabel: UILabel!
     @IBOutlet weak var detailDescription: UITextView!
     
-
+    var sentData1: String!
+    var sentData2: String!
+    var sentData3: String!
+    var sentData4: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.navigationItem.title = sentData1
+        
+        detailImageView.image = UIImage(named: sentData2)
+        nameLabel.text = sentData1
+        infoLabel.text = sentData3
+        detailDescription.text = sentData4
+        
        
     }
     
